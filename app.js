@@ -6,10 +6,8 @@ var methodOverride = require("method-override"),
     express = require("express"),
     app = express(),
     seedDB = require("./seeds"),
-    Campground = require("./models/campground"),
     User = require("./models/user"),
-    flash = require("connect-flash"),
-    Comment = require("./models/comment");
+    flash = require("connect-flash");
 
 
 // Requiring routes
