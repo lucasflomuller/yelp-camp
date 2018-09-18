@@ -21,6 +21,7 @@ var authRoutes = require("./routes/auth"),
 
 
 // Connecting to db
+var url = process.env.DATABASEURL || "mongodb://localhost:27017/yelp_camp";
 mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true});
 
 app.use(bodyParser.urlencoded({extended: true}));
