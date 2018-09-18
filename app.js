@@ -21,7 +21,7 @@ var authRoutes = require("./routes/auth"),
 
 
 // Connecting to db
-mongoose.connect("process.env.DATABASEURL", {useNewUrlParser: true});
+mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true});
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
