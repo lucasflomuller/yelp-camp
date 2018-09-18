@@ -21,10 +21,11 @@ var authRoutes = require("./routes/auth"),
 
 
 // Connecting to db
-mongoose.connect("mongodb://localhost:27017/yelp_camp", {useNewUrlParser: true});
+// mongoose.connect("mongodb://localhost:27017/yelp_camp", {useNewUrlParser: true});
+mongoose.connect("mongodb://lucasflomuller:Muller250720@ds261302.mlab.com:61302/yelpcamp", {useNewUrlParser: true});
 
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static("public"));
+app.use(express.static(__dirname + "public"));
 app.set("view engine", "ejs");
 app.use(methodOverride("_method"));
 app.use(flash());
