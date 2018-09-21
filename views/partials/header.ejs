@@ -14,22 +14,22 @@
                 <% if (!currentUser){ %>
                     <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
                     <li class="nav-item"><a class="nav-link" href="/register">Sign Up</a></li>
-                    <% } else { %>
-                        <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
-                        <% } %>
-                    </ul>
-                </div>
-            </nav>
-            
-            <div>
-                <% if(error && error.length > 0){ %>
-                    <div class="alert alert-danger rounded-0 mb-0" role="alert">
-                        <%= error %>
-                    </div>
+                <% } else { %>
+                    <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
                 <% } %>
-                <% if(success && success.length){ %>
-                    <div class="alert alert-success rounded-0 mb-0" role="alert">
-                        <%= success %>
-                    </div>
-                <% } %>
+            </ul>
+        </div>
+    </nav>
+                
+    <div>
+        <% if(error && error.length > 0){ %>
+            <div class="alert alert-danger rounded-0 mb-0" role="alert">
+                <%= error %>
             </div>
+        <% } %>
+        <% if(success && success.length){ %>
+            <div class="alert alert-success rounded-0 mb-0" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+    </div>
