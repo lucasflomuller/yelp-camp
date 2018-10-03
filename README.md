@@ -1,2 +1,2 @@
 # yelp-camp
-A Node.js web application project from the Udemy course - The Web Developer Bootcamp by Colt Steele
+A Node.js web application project from the Udemy course - The Web Developer Bootcamp by Colt Steele. The course covers the basic of node and express, also introduce the student to NoSQL database, in that case, MongoDB. It's a really great course, and I loved to learn with Colt. I'm learning more stuff to improve this webapp, for now, it is avaiable [here](http://mighty-beach-41532.herokuapp.com/campgrounds).
